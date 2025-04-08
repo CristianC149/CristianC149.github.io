@@ -1,0 +1,307 @@
+/* Fundal general */
+body {
+    overflow-x: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fundal închis */
+    color: #f4f4f4; /* Text deschis pentru contrast */
+    display: flex;
+    min-height:100vh;
+    flex-direction: column;
+    overflow: auto; /* Permite scroll-ul pe toate paginile */ /* Elimină restricția de înălțime */
+}
+
+main {
+    padding: 20px;
+    max-width: 50vw;
+    margin: auto; 
+    flex: 1;/* Asigură conținut suficient pentru scroll */
+}
+
+/* Header stilizat */
+header {
+    background-color: #2f2f2f; /* Fundal închis */
+    color: #ecf0f1; /* Text deschis */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 15px; /* Spațiere între opțiunile meniului */
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ecf0f1; /* Text deschis */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundal deschis la hover */
+}
+
+/* Secțiuni */
+.intro, .biografie, .realizari, .curiozitati, .timeline {
+    background-color: #2a2a2a; /* Fundal închis */
+    color: #f4f4f4; /* Text deschis */
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.intro img {
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Timeline */
+.timeline-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.timeline-list li {
+    margin: 10px 0;
+    padding-left: 10px;
+    border-left: 3px solid #2980b9; /* Linie albastră */
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #2f2f2f;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: static; /* Elimină poziționarea fixă */
+    bottom: 0;
+}
+
+/* Galerie */
+.grid-galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.grid-galerie img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.slider {
+    background-color: #444;
+    border: 10px solid #444; /* Bordură albastră */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 48vw;
+    height: fit-content;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-track img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    max-height: 100%;
+}
+
+/* Butoane slider */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.515); /* Fundal deschis */
+    color: #000000; /* Text deschis */
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-btn.prev {
+    left: 20px; /* Poziționare mai aproape de marginea slider-ului */
+}
+
+.slider-btn.next {
+    right: 20px; /* Poziționare mai aproape de marginea slider-ului */
+}
+
+.slider-btn:hover {
+    background-color: rgb(255, 255, 255); /* Fundal mai deschis la hover */
+}
+
+/* Pe ecrane mici, butoanele rămân peste imagine */
+@media (max-width: 768px) {
+    .slider-btn.prev {
+        left: 10px;
+    }
+
+    .slider-btn.next {
+        right: 10px;
+    }
+}
+
+/* Evoluție telefon */
+.grid-evolutie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.grid-evolutie img, .telefon img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+.grid-evolutie h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #f4f4f4; /* Text deschis */
+}
+
+.grid-evolutie p {
+    font-size: 14px;
+    color: #ccc; /* Text mai deschis */
+    line-height: 1.5;
+}
+
+section.impact img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Animație */
+.animatie {
+    text-align: center;
+    padding: 50px 20px;
+    color: #f4f4f4; /* Text deschis */
+}
+
+.scroll-text {
+    font-size: 20px;
+    transform: translateY(-50px);
+    margin-bottom: 30px;
+    color: #f4f4f4;
+    font-weight: bold;
+}
+.animatie-appear {
+    background: none;
+}
+.telefon-container {
+    position: relative;
+    height: 500px;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Spațiere între componente */
+    background: none; /* Elimină fundalul containerului */
+}
+
+.telefon-component {
+    position: absolute;
+    transition: transform 2s ease, opacity 1s ease; /* Animație mai lentă */
+    width: 200px; /* Dimensiuni inițiale egale */
+    height: 200px;
+    transform-origin: center;
+    z-index: 1; /* Asigură că imaginile sunt deasupra textului */
+}
+
+.baza {
+    background-color: #444; /* Fundal pentru componente */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transform: translate(-300px, 150px); /* Poziție aleatorie */
+}
+
+.receptor {
+    background-color: #444; /* Fundal pentru componente */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transform: translate(250px, -100px); /* Poziție aleatorie */
+}
+
+.cablu {
+    background-color: #444; /* Fundal pentru componente */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transform: translate(-150px, -200px); /* Poziție aleatorie */
+}
+
+.final {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1; /* Imaginea a 4-a rămâne vizibilă */
+    transition: opacity 1s ease; /* Tranziție pentru afișare/ascundere */
+    z-index: 2; /* Imaginea finală deasupra celorlalte */
+}
+
+.explozie {
+    animation: explozie 2s ease-out forwards; /* Animație mai lentă */
+}
+
+@keyframes explozie {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
