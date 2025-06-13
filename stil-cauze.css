@@ -1,0 +1,67 @@
+
+.container{
+    background-image:url(Resurse/paper-rustic-background.jpg);
+    background-color: rgba(255, 255, 255, 0.512);
+    background-blend-mode: color;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items:top;
+
+    justify-content: left;
+    height: 100vh;
+    color: rgb(54, 27, 7);
+}
+@media (max-width: 768px) {
+.container{
+    flex-direction: column;
+}
+.imaginemare{
+    width:100vw;
+}
+.text{
+    width: 90vw;
+}
+.informatii{
+    width: 90vw;
+}
+ }
+
+
+.text{
+    height: 97.5%;
+    width: 50vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    padding-top: 10vh;
+}
+.informatii{
+    font-size: 1rem;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 0.2rem;
+    
+}
+h1{
+    font-weight: 900;
+}
+hr{
+    height: 2px;
+    background-color: black;
+}
+.imaginemare{
+width:45vw;
+height:140vh;
+background-image: url('Resurse/cauze/Picture1.jpg');
+background-size:cover;
+}
+.imaginemica{
+    width: 7rem;
+    border: 5px solid rgb(73, 37, 19);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.723);
+    margin:7px;
+}

@@ -1,67 +1,132 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alexander Graham Bell</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+        /* Pentru bara navigatie */
+        var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+      } else {
+        document.getElementById("nav").style.top = "-100px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
 </head>
-<body>
-  <header>
-    <h1>Alexander Graham Bell</h1>
-    <nav>
-      <a href="index.html">Acasă</a>
-      <a href="galerie.html">Galerie</a>
-      <a href="telefon.html">Telefonul</a>
-      <a href="animatie.html">Animație</a>
+<body class="corpunu">
+    <nav id="nav">
+        <ul class="menu">
+            <li><a href=index.html accesskey="q" ><img id="home" src="Resurse/home.png"></a></li>
+            <li><a href="cauzele.html" accesskey="1" >Cauzele</a>
+            </li><li><a href="batalii.html" accesskey="2">Desfășurarea</a>
+            
+                <ul>             
+                    <li><a href="batalii.html#batalii">Bătălii</a></li>
+                    <li><a href="comandanti.html">Comandanți</a></li>
+       
+                </ul>
 
-    </nav>
-  </header>
-
-  <main>
-    <section class="intro">
-        <img src="images/port.png" alt="Alexander Graham Bell">
-        <p><strong>Alexander Graham Bell</strong> (n. 3 martie 1847 – d. 2 august 1922) a fost un om de știință, inventator și inginer cunoscut mai ales pentru inventarea primului telefon practic.</p>
-      </section>
-  
-      <section class="biografie">
-        <h2>Biografie</h2>
-        <ul>
-          <li><strong>Naștere:</strong> Edinburgh, Scoția</li>
-          <li><strong>Studii:</strong> University of Edinburgh și University College London</li>
-          <li><strong>Emigrare:</strong> S-a stabilit în Canada și apoi în Statele Unite</li>
-          <li><strong>Deces:</strong> Baddeck, Canada</li>
-        </ul>
-      </section>
-  
-      <section class="realizari">
-        <h2>Realizări</h2>
-        <p>A inventat telefonul în 1876, schimbând pentru totdeauna modul în care comunicăm. A fost co-fondator al companiei Bell Telephone Company.</p>
-      </section>
-  
-      <section class="curiozitati">
-        <h2>Curiozități</h2>
-        <p>Deși este cunoscut pentru telefon, Bell a fost pasionat și de alte domenii, cum ar fi aviația și comunicarea pentru persoane cu deficiențe de auz.</p>
-      </section>
-    </main>
+            </li> 
+            <li><a href="finala.html" accesskey="3" >Congresul</a>
+                <ul>                 
+                    <li><a href="finala.html#tratative">Tratativele de pace si consecințele</a></li>
+                    <li><a href="finala.html#galerie">Galerie imagini</a></li>                </ul>
+            </li>
+            <li><a href="caracteristici.html" accesskey="4" >Inovații </a>
+            <ul>
+                <li><a href="mediatizarea.html">Mediatizarea</a>
+                    
+                </li>            
+            </ul>
+            </li>
     
+                <li><a  href="facts.html" accesskey="5" >Știați că?</a></li>
+            <li><a href="activitati.html" accesskey="6" >Activități de învățare</a>
+                <ul>
+                    <li><a href="activitati.html#harta">Hartă interactivă</a></li>
+                    <li><a href="activitati.html#quiz">Ce am reținut?</a></li>
+                </ul>
+            </li>
+            <li><a href="despre.html">Despre</a>
+                <ul id="Despre">
+                    <li><a href="despre.html#res">Resurse</a></li>
+                    <li><a href="despre.html#contact">Contact</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
 
-    <section class="timeline">
-      <h2>Timeline</h2>
-      <ul class="timeline-list">
-        <li><strong>1847</strong> – Se naște în Edinburgh, Scoția</li>
-        <li><strong>1870</strong> – Emigrează în Canada</li>
-        <li><strong>1876</strong> – Obține brevetul pentru telefon</li>
-        <li><strong>1877</strong> – Fondatează Bell Telephone Company</li>
-        <li><strong>1922</strong> – Moare în Baddeck, Canada</li>
-      </ul>
-    </section>
-  </main>
+    <!-- Conținut principal -->
+    <div class="container">
+        <div class="text-container">
+            <h1>RĂZBOIUL CRIMEII</h1>
+            <p>Primul conflict european mediatizat</p>
+        </div>
+    </div>
+        <div class="tranzitie">
+        </div>
 
-  <footer>
-    <p>© 2025 - Proiect despre Alexander Graham Bell</p>
-  </footer>
 
-  <script src="script.js"></script>
+
+
+    <div class="pagina">
+        <div class="tipunu" id="stanga">
+            <img class="imgvert" src="Resurse/Picture1.png">
+        <p class="textvert">Războiul Crimeii a fost primul conflict de mare amploare al secolului al XIX-lea după cele napoleoniene. Pe de o parte avem Imperiul Rus cu dorințe expansioniste,  declinul „omului bolnav al Europei” (Imperiul Otoman)  făcându-l pe Țar să se impună din ce în ce mai mult în fața Sultanului.</p>
+       
+    </div>
+    <div class="tipunu" id="dreapta">
+        <p class="textvert">
+            Deși este văzut ca o serie de gafe politice, acest război a adus multe schimbări importante în conflictele militare. Au fost folosite pentru prima dată obuze explozive, care s-au dovedit eficiente. Războiul de manevră a fost înlocuit cu războiul de poziții, fiind folosite tranșee și fortificații. În bătăliile navale, navele cu aburi au arătat superioritate față de cele cu pânze. De asemenea, carabinele de mare precizie folosite de aliați au avut avantaj față de cele rusești cu bătaie scurtă.
+         </p>        
+         <img class="imgvert" src="Resurse/Picture2.jpg">
+    </div>
+</div>
+    <div class="pagina">
+        <div class="tipunu" id="stanga">
+            <img class="imgvert" src="Resurse/Picture3.jpg">
+            <p class="textvert">
+                Căile ferate au fost pentru prima oară folosite pentru transportul de trupe, furaje și materiale, esențiale pentru eficientizarea logisticilor. Totuși, Intendentul General britanic încă prefera metodele vechi, căruțele, și obișnuia să lase în grija comandanților din prima linie sarcina aprovizionării, aceștia fiind nevoiți să apeleze la toate mijloacele posibile. Cantitatea necesară de provizii zilnice era de 112 tone de mâncare, nutreț și combustibil.  
+            </p>  
+                
+    </div>
+    <div class="tipunu" id="dreapta">
+        <p class="textvert">
+            Este primul război în care au fost prezenți reporterii, aceștia folosindu-se de noile mijloace de comunicare rapidă, precum telegraful, pentru a oferi știri de actualitate ziarelor la care erau angajați. De asemenea, a fost prima conflagrație în care au participat fotografii de război, cele mai cunoscute nume fiind românul Carol Popp de Szathmári și englezul Roger Fenton. 
+            </p>
+            <img class="imgvert" src="Resurse/Picture4.jpg">
+    </div>
+</div>
+
+
+
+<div class="pagina">
+    <div class="tipunu" id="stanga">
+        <img class="imgvert" src="Resurse/Picture5.jpg">
+        <p class="textvert">
+            Este cunoscut că Lordul Raglan privea cu antipatie jurnaliștii, îngreunându-i munca irlandezului William Howard Russel, trimis al ziarului „The Times”, care era staționat alături de trupele sale. Irlandezul s-a folosit de postul său de jurnalist pentru a se răzbuna, scrierile lui trimise în Anglia descriau pozițiile, fortificațiile, punctele slabe ale aliaților, incompetenta operațională a comandanților și dezorganizarea cumplită a serviciilor medicale, oferind rușilor informații cheie. Nicolae I, Țarul Rusiei remarcând: „Nu avem nevoie de spioni. Avem Times!”.           </p>  
+            
+</div>
+<div class="tipunu" id="dreapta">
+    <p class="textvert">
+        Conflictul a angrenat mari mase de populație, ziarele ale căror articole relatau întâmplările într-o imagine artistică a unei lupte între bine și rău stârnind spiritul patriotic în publicul larg. Odată ajunși pe front, cei mai mulți mureau în urma bolilor, infectărilor și complicațiilor post-operatorii, aceste cauze depășind de patru-cinci ori numărul celor care picau în luptă.        </p>
+        <img class="imgvert" src="Resurse/Picture6.jpg">
+</div>
+
+    <div class="tipunu" id="stanga">
+    <p class="textvert" id="final">Războiul Crimeii este de multe ori văzut, din ochii altor popoare, ca fiind inutil și nemerituos de a fi trecut pe lista marilor războaie. De fapt, el a prezentat un punct de turnură în zona Balcanică, mai ales pentru noi, românii, oferindu-ne șansa de a ne emancipa.</p>
+</div>
+</div>
 </body>
 </html>
+

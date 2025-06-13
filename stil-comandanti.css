@@ -1,0 +1,45 @@
+.com img{
+border-radius: 10px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.813);
+border:3px solid black;
+height: 100vh;
+}
+
+.com{
+    justify-content: center;
+    align-items: center;
+margin: 4rem;
+height: fit-content;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+color: rgb(72, 45, 23);
+text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.813);
+font-weight: 700;
+font-size:1.1rem;
+}
+.info{
+    padding:0 2rem 0 2rem ;
+}
+.com p{
+text-indent: 3rem;
+text-align: justify;
+}
+.com h1{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 900;
+}
+.text-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    color:rgb(256, 256, 256);
+}
+hr{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(66, 38, 15);
+}

@@ -1,0 +1,38 @@
+.oltenita, .sinop, .alma, .sevastopol,.balaclava, .baltic{
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-indent: 2rem;
+    flex-wrap: nowrap;
+}
+h1{ 
+    
+    text-shadow: 0 0 6px white;
+    margin-top: 5rem;
+    text-align: center;
+    color: black;
+    font-weight:900;
+}
+.fragment{
+    background-color: antiquewhite;
+    box-shadow:0 0 1rem rgb(0, 0, 0);
+    margin:2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 1rem;
+    transition: 0.2s;
+}
+.fragment:hover{
+    transform: scale(1.02,1.02);
+    
+}
+#batalii img{
+    height: 15rem;
+    margin:0 2rem 0 2rem ;
+    border-radius: 10px;
+}

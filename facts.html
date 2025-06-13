@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+        /* Pentru bara navigatie */
+        var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+      } else {
+        document.getElementById("nav").style.top = "-100px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
+</head>
+<body>
+    <nav id="nav">
+        <ul class="menu">
+            <li><a href="index.html" accesskey="q" ><img id="home" src="Resurse/home.png"></a></li>
+            <li><a href="cauzele.html" accesskey="1" >Cauzele</a>
+            </li>
+            <li><a href="batalii.html" accesskey="2">Desfășurarea</a>
+                <ul>             
+                    <li><a href="batalii.html#batalii">Bătălii</a></li>
+                    <li><a href="comandanti.html">Comandanți</a></li>
+       
+                </ul>
+
+            </li>
+            <li><a href="finala.html" accesskey="3" >Congresul</a>
+                <ul>                 
+                    <li><a href="finala.html#tratative">Tratativele de pace si consecințele</a></li>
+                    <li><a href="finala.html#galerie">Galerie imagini</a></li>                </ul>
+            </li>
+            <li><a href="caracteristici.html" accesskey="4" >Inovații </a>
+            <ul>
+                <li><a href="mediatizarea.html">Mediatizarea</a>
+                   
+                </li>            
+            </ul>
+            </li>
+    
+                <li><a  href="facts.html" accesskey="5" >Știați că?</a></li>
+            <li><a href="activitati.html" accesskey="6" >Activități de învățare</a>
+                <ul>
+                    <li><a href="activitati.html#harta">Hartă interactivă</a></li>
+                    <li><a href="activitati.html#quiz">Ce am reținut?</a></li>
+                </ul>
+            </li>
+            <li><a href="despre.html">Despre</a>
+                <ul id="Despre">
+                    <li><a href="despre.html#res">Resurse</a></li>
+                    <li><a href="despre.html#contact">Contact</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+<div class="container" style="background-image:url('Resurse/harta.png'); background-color: rgba(0, 0, 0, 0.6); background-blend-mode: color;">
+    <div class="text-container">
+        <h1>Știați că?</h1>
+    </div>
+    <div class="tranzitie" style="height:20vh; top:80vh; background: linear-gradient(rgba(0, 0, 0, 0),rgb(88, 62, 47));">
+    </div>
+</div>
+<div class="pagina" style="height: fit-content; padding-bottom: 2rem; background-color: rgb(88, 62, 47);">
+    
+    <div class="tipunu" id="info"> <b>
+        <p class="textvert">1.	Țarul Nicolae I era convins că Imperiul Britanic va rămâne neutru în acest conflict. În iunie 1844, el s-a întâlnit cu regina Victoria, premierul Robert Peel și ministrul de externe, lordul Aberdeen, pentru a discuta „Problema Orientală” și o posibilă împărțire a Imperiului Otoman. Deși englezii au fost amabili și nu i-au respins propunerea, nu a fost semnat niciun tratat.  </p>
+            </div>
+    <div class="tipunu" id="info">
+<p class="textvert">2. Ida (Saide), soţia mareşalului Omer Paşa, româncă, sora compozitorului craiovean Gheorghe Simonis, compune Marşul Silistrei; anterior compusese Marşul Olteniţei. Ambele sunt publicate în „The Illustrated London News" No.684/May 27, 1854 şi, respectiv, No.723/January 13, 1855.</p>
+    </div>
+    <div class="tipunu" id="info">
+<p class="textvert">3.	Nicolae I era supranumit „Stâlpul Reacțiunii” datorită intervențiilor armatei ruse în revoltele din 1848.</p>
+    </div>
+    <div class="tipunu" id="info">
+        <p class="textvert">4.	Armata trimisă de aliați pentru a debarca în Crimea număra 350 de nave de război.</p>
+            </div>
+			<div class="tipunu" id="info">
+        <p class="textvert">5.	Soldații francezi utilizau cadavrele soldaților inamici pe post de fortificații.</p>
+            </div>
+            <div class="tipunu" id="info">
+                <p class="textvert">6.	Asediul de la Sevastopol a fost unul dintre cele mai sângeroase și lungi asedii din secolul al XIX-lea, durata sa apropiindu-se de un an.</p>
+                    </div>
+            <div class="tipunu" id="info">
+        <p class="textvert">7.	Regatul Sardiniei s-a alăturat aliaților în octombrie 1854, contribuind la efortul de război cu aproximativ 18.000 de soldați. Prin această implicare, Sardinia urmărea să-și întărească relațiile cu statele occidentale și să-și apropie obiectivul de unificare a peninsulei italice sub tricolorul verde, alb și roșu. </p>
+            </div>
+            <div class="tipunu" id="info">
+                <p class="textvert">8.	Deși nu a participat direct la război, Imperiul Habsburgic a ocupat Principatele Dunărene în august și septembrie 1854, în baza unei înțelegeri cu Sublima Poartă semnate pe 14 iunie același an. Austria a acceptat să transforme această regiune într-o zonă neutră între cele două tabere beligerante, sperând totodată să convingă aliații să-i permită menținerea ocupației. Însă această decizie s-a dovedit a fi un eșec, lăsând Viena izolată pe scena europeană. </p>
+                    </div>
+                    <div class="tipunu" id="info">
+                        <p class="textvert">9.	Mult mai mulți soldați au murit din cauza bolilor decât în luptă.</p>
+                            </div>
+                    <div class="tipunu" id="info">
+                <p class="textvert">10.	Ultimul „veteran” al Războiului Crimeii a murit in 2004. Numele lui era Timothy, o broască țestoasă din Grecia găsită pe o navă portugheză.</p>
+                    </div>            
+                    <div class="tipunu" id="info">
+                        <p class="textvert">11.	Nikolai Pirogov, considerat părintele chirurgiei de campanie rusești, a adus contribuții semnificative în chirurgia militară, fiind primul care a utilizat anestezia pe front.</p>
+                            </div> </b>
+				    
+</body>
+</html>
