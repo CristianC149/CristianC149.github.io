@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stil-caracteristici.css">
+<script>
+        /* Pentru bara navigatie */
+        var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+      } else {
+        document.getElementById("nav").style.top = "-100px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
+</head>
+<body>
+    <nav id="nav">
+        <ul class="menu">
+            <li><a href=index.html accesskey="q" ><img id="home" src="Resurse/home.png"></a></li>
+            <li><a href="cauzele.html" accesskey="1" >Cauzele</a>
+            </li>
+            <li><a href="batalii.html" accesskey="2">Desfășurarea</a>
+                <ul>             
+                    <li><a href="batalii.html#batalii">Bătălii</a></li>
+                    <li><a href="comandanti.html">Comandanți</a></li>
+       
+                </ul>
+
+            </li>
+            <li><a href="finala.html" accesskey="3" >Congresul</a>
+                <ul>                 
+                    <li><a href="finala.html#tratative">Tratativele de pace si consecințele</a></li>
+                    <li><a href="finala.html#galerie">Galerie imagini</a></li>                </ul>
+            </li>
+            <li><a href="caracteristici.html" accesskey="4" >Inovații </a>
+            <ul>
+                <li><a href="mediatizarea.html">Mediatizarea</a>
+                    
+                </li>            
+            </ul>
+            </li>
+    
+                <li><a  href="facts.html" accesskey="5" >Știați că?</a></li>
+            <li><a href="activitati.html" accesskey="6" >Activități de învățare</a>
+                <ul>
+                    <li><a href="activitati.html#harta">Hartă interactivă</a></li>
+                    <li><a href="activitati.html#quiz">Ce am reținut?</a></li>
+                </ul>
+            </li>
+            <li><a href="despre.html">Despre</a>
+                <ul id="Despre">
+                    <li><a href="despre.html#res">Resurse</a></li>
+                    <li><a href="despre.html#contact">Contact</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+    <div class="tot">
+<div class="caract">
+<ol>
+    <li>Progrese medicale:
+        <ul>
+            <li><i>Nicolai Pirogov</i> a revoluționat medicina militară rusă prin introducerea anesteziei, dezvoltarea tehnicilor de amputare și crearea spitalelor mobile, îmbunătățind îngrijirea răniților pe câmpul de luptă. </li>
+            <li>S-au folosit pentru prima dată vehicule de tip ambulanță.</li>
+            <li> <i>Florence Nightingale</i> a fondat medicina modernă a îngrijirii, introducând igiena și organizarea spitalelor, reducând infecțiile și îmbunătățind condițiile de îngrijire a pacienților. A fost și un pionier al statisticii în domeniul sănătății. </li>
+        </ul>
+    </li>
+    
+        
+            <li>Oamenii de rând au practicat „turismul de război”, o premieră.
+			 <ul>
+				<li>Turismul de război din Războiul Crimeii a atras aristocrați, politicieni și jurnaliști, facilitând accesul civililor pe front datorită progreselor în transport. Fotografi celebri, precum Carol Popp de Szathmári și Roger Fenton, au documentat conflictul, transformându-l într-un spectacol pentru public.</li>
+		     </ul>
+			</li>
+            
+	
+   
+       
+    </li>
+    <li>Inovații tehnologice și tactice:
+        <ul>
+            <li>Utilizarea căilor ferate a îmbunătațit logisticile militare, totuși metodele convenționale de transport, precum căruța, continuau sa fie preferate de comandanții înaintați în vârstă. </li>
+			<li>Vechiile tactici folosite de armatele europene s-au adaptat noilor metode de distrugere mutuală, războiul devenind unul de poziții, cu fortificații construite de ofițeri geniști.
+			<li>Telegraful a permis ziarelor, precum The Times, să transmită rapid știri de pe front, expunând incompetența comandanților și condițiile grele ale soldaților, influențând astfel opinia publică și reformele militare.</li>
+            <li>Armata britanică a folosit puști ghintuite și gloanțe Minié, sporind raza și precizia tirului. Aceasta a oferit un avantaj decisiv asupra armelor rusești învechite.</li>
+            <li>Obuzele explozive au fost folosite pentru prima dată în luptele navale, revoluționând războiul pe mare. Flota otomană a fost devastată la Sinop în 1853, demonstrând superioritatea acestui nou tip de armament.</li>
+        </ul>
+    </li>
+   
+    
+</div>
+<div class="fotografii">
+    <div class="bucata">
+        <img src="Resurse/caracteristici/image1.png">
+        <P>Nicolai Pirogov</P>
+    </div>
+    <div class="bucata">
+        <img src="Resurse/caracteristici/image2.png">
+        <P>Florence Nightingale </P>
+    </div>
+    <div class="bucata">
+        <img src="Resurse/caracteristici/image3.png">
+        <P>„Valley of the Shadow of Death”, Roger Fenton</P>
+    </div>
+    <div class="bucata">
+        <img src="Resurse/caracteristici/image4.png">
+        <P>Stația feroviară-Balaclava</P>
+    </div>
+    
+</div>
+</div>
+</body>
+</html>

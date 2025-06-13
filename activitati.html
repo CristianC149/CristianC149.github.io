@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    #tooltip {
+            position: absolute;
+            background-color: black; /* Fundal netransparent */
+            color: white;
+            padding: 10px; /* Margine mai mare pentru un aspect mai plăcut */
+            border-radius: 5px;
+            display: none;
+            pointer-events: none;
+            font-size: 16px; /* Mărimea textului mărită */
+            font-weight: bold;
+    }
+    .corp p{
+        color:rgb(47, 19, 5);
+        font-weight: 800;
+        font-size:1.2rem;
+    }
+</style>
+<script>
+        /* Pentru bara navigatie */
+        var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+      } else {
+        document.getElementById("nav").style.top = "-100px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
+</head>
+<body>
+    <nav id="nav">
+        <ul class="menu">
+            <li><a href=index.html accesskey="q" ><img id="home" src="Resurse/home.png"></a></li>
+            <li><a href="cauzele.html" accesskey="1" >Cauzele</a>
+            </li>
+            <li><a href="batalii.html" accesskey="2">Desfășurarea</a>
+                <ul>             
+                    <li><a href="batalii.html#batalii">Bătălii</a></li>
+                    <li><a href="comandanti.html">Comandanți</a></li>
+       
+                </ul>
+
+            </li>
+            <li><a href="finala.html" accesskey="3" >Congresul</a>
+                <ul>                 
+                    <li><a href="finala.html#tratative">Tratativele de pace si consecințele</a></li>
+                    <li><a href="finala.html#galerie">Galerie imagini</a></li>                </ul>
+            </li>
+            <li><a href="caracteristici.html" accesskey="4" >Inovații </a>
+            <ul>
+                <li><a href="mediatizarea.html">Mediatizarea</a></li> </ul>
+                    
+            </li>
+    
+                <li><a  href="facts.html" accesskey="5" >Știați că?</a></li>
+            <li><a href="activitati.html" accesskey="6" >Activități de învățare</a>
+                <ul>
+                    <li><a href="activitati.html#harta">Hartă interactivă</a></li>
+                    <li><a href="activitati.html#quiz">Ce am reținut?</a></li>
+                </ul>
+            </li>
+            <li><a href="despre.html">Despre</a>
+                <ul id="Despre">
+                    <li><a href="despre.html#res">Resurse</a></li>
+                    <li><a href="despre.html#contact">Contact</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+<div class="corp" style="display: flex;flex-direction: column; align-items: center; margin:4rem 0 4rem 0; gap:5rem;">
+<div class="map" id="harta">
+    <p>Treceți cursorul peste zonele hărții pentru a afla mai multe:
+    </p>
+<img src="Resurse/map.png" usemap="#image-map" style="width:90vw;">
+<map name="image-map">
+    <area target="" alt="Principatele Dunărene – Se unesc în 1859, consecință directa a Războiului Crimeii, sub conducerea lui Alexandru Ioan Cuza."href="#"  coords="375,2,311,1,305,14,285,13,262,20,247,17,233,23,226,37,246,46,262,64,273,87,282,109,285,125,290,136,300,154,304,170,331,185,357,186,372,198,389,211,396,218,404,226,404,240,387,241,360,241,346,232,334,230,319,212,310,202,297,198,278,212,247,217,223,218,229,235,244,244,247,258,247,278,247,297,244,313,230,310,212,296,200,281,195,261,201,252,194,235,188,220,176,212,166,211,154,208,148,217,128,259,141,261,102,313,92,253,109,242,119,207,25,233,9,279,8,306,19,320,32,333,28,352,32,361,63,368,99,376,125,382,177,382,206,393,243,370,267,368,293,364,328,362,358,350,393,337,396,308,401,265,421,236,422,196,424,151,433,122,427,84,404,41" shape="poly">
+    <area target="" alt="Imperiul Otoman – „Sublima Poartă” acum batjocorită, supranumită „Omul bolnav al Europei” din cauza stării economice devastatoare.
+    " href="#" coords="473,671,554,677,616,689,642,669,703,639,744,617,808,601,849,599,901,599,921,592,936,608,951,622,982,624,1002,628,1017,643,1035,657,1057,660,1076,663,1096,669,1117,681,1139,681,1160,689,1180,689,1200,686,1221,681,1244,678,1284,677,1302,681,1340,675,1366,659,1384,642,1402,617,1411,592,1419,567,1442,582,1475,587,1507,601,1547,619,1582,645,1610,677,1614,722,1616,747,1629,764,1669,764,1701,773,1710,797,1722,812,1724,913,470,913,310,916,159,914,210,802,283,754,359,732,419,735,453,726,468,695" shape="poly">
+    <area target="" alt="Imperiul Otoman – „Sublima Poartă” acum batjocorită, supranumită „Omul bolnav al Europei” din cauza stării economice devastatoare.
+    " href="#" coords="6,308,23,356,60,368,113,378,176,394,236,397,299,369,343,359,377,351,407,336,403,310,399,284,407,254,419,238,439,254,467,270,488,284,511,298,521,310,482,328,462,353,450,381,447,412,439,436,421,445,403,445,387,456,375,470,378,491,378,509,361,528,374,560,384,590,393,620,409,642,427,652,442,663,441,684,433,695,409,695,364,689,334,700,317,710,278,722,256,736,240,750,215,762,182,791,153,846,128,891,104,913,3,913" shape="poly">
+    <area target="" alt="Imperiul Otoman – „Sublima Poartă” acum batjocorită, supranumită „Omul bolnav al Europei” din cauza stării economice devastatoare.
+    " href="#" coords="398,459,414,462,456,462,485,453,513,432,546,403,581,362,619,337,667,314,702,298,737,287,740,272,763,273,784,278,799,287,791,299,755,316,746,307,719,316,693,319,662,334,625,362,582,391,564,412,537,441,511,456,480,476,450,483,422,477,404,470" shape="poly">
+    <area target="" alt="Imperiul Rus - Protectorul Crestin Ortodocsilor, s-a folosit de pretextul religios pentru a-și atinge ambițiile expansioniste." href="#" coords="0,293,18,289,6,267,9,251,21,238,20,225,46,223,68,222,90,216,102,206,117,200,122,209,108,229,96,238,84,254,87,282,85,290,87,308,90,325,105,316,135,299,132,281,149,258,152,241,140,226,152,212,172,209,184,212,193,226,198,247,201,257,192,272,204,287,216,298,228,311,241,314,251,290,251,270,248,251,238,235,224,223,248,223,265,217,279,209,295,203,311,203,326,214,332,225,341,234,362,238,387,247,407,241,415,226,393,199,376,187,364,174,341,170,326,167,312,161,300,138,292,115,289,86,273,57,254,37,273,24,317,16,335,7,1720,2,1720,797,1691,761,1647,751,1630,729,1619,689,1609,659,1571,617,1531,596,1486,575,1441,561,1400,517,1268,430,1160,346,1067,293,931,301,907,316,876,334,853,349,831,356,823,334,812,318,805,296,806,272,782,263,761,252,735,263,751,232,785,214,809,179,739,179,703,167,672,132,634,129,605,152,596,167,567,194,550,217,534,238,523,284,430,235,396,260,396,278,393,293,393,310,396,324,386,330,367,337,348,349,313,354,272,363,247,371,211,375,176,375,139,372,95,362,66,353,34,337" shape="poly">
+    <area target="" alt="Imperiul Habsburgic – Deși ajutați de ruși în suprimarea revoluției maghiare din 1848 acum are o postură pasiv-agresivă față de Țar, izolându-se în Europa." href="#" coords="2,1,313,6,249,31,278,86,304,165,361,181,381,202,398,222,403,234,381,234,355,233,307,190,290,196,262,205,236,214,220,222,227,234,240,248,246,263,243,283,236,298,212,286,204,256,203,225,182,202,163,199,144,205,134,221,139,237,144,251,137,265,125,288,118,300,98,312,98,249,121,223,125,191,90,209,58,216,37,217,13,223,2,267" shape="poly">
+    <area target="" alt="Trupele Franco-Britanice – Franța și Anglia intră în război în 1854 drept urmare a Masacrului de la Sinop." href="#" coords="185,864,206,802,312,740,447,726,469,678,473,480,395,467,415,461,466,462,523,423,557,382,592,348,632,323,681,304,711,293,728,283,751,275,774,272,789,267,721,258,679,280,630,292,612,306,612,283,618,254,627,231,635,211,635,182,621,160,610,154,595,178,583,199,586,219,592,225,590,245,587,275,581,298,577,315,569,336,518,395,483,426,438,445,403,448,383,464,387,493,401,508,415,520,425,552,435,613,441,642,446,663,449,689,402,707,356,704,318,712,281,727,251,747,210,768,184,797,156,858,133,893,121,910,148,916,157,907" shape="poly">
+</map>
+
+<div id="tooltip"></div>
+
+<script>
+    const areas = document.querySelectorAll('area');
+    const tooltip = document.getElementById('tooltip');
+    let tooltipVisible = false; // Flag pentru a verifica dacă tooltip-ul este vizibil
+
+    areas.forEach(area => {
+        area.addEventListener('mouseover', (event) => {
+            if (!tooltipVisible) { // Verifică dacă tooltip-ul nu este deja vizibil
+                tooltip.innerText = area.alt; // Preia titlul din atributul title
+                tooltip.style.display = 'block'; // Afișează tooltip-ul
+                tooltipVisible = true; // Setează flag-ul ca vizibil
+            }
+        });
+
+        area.addEventListener('mousemove', (event) => {
+            if (tooltipVisible) { // Numai dacă tooltip-ul este vizibil
+                tooltip.style.left = event.pageX + 10 + 'px'; // Poziția pe axa X
+                tooltip.style.top = event.pageY + 10 + 'px'; // Poziția pe axa Y
+            }
+        });
+
+        area.addEventListener('mouseout', () => {
+            tooltip.style.display = 'none'; // Ascunde tooltip-ul
+            tooltipVisible = false; // Resetează flag-ul
+        });
+    });
+    !function(){"use strict";function r(){function e(){var r={width:u.width/u.naturalWidth,height:u.height/u.naturalHeight},a={width:parseInt(window.getComputedStyle(u,null).getPropertyValue("padding-left"),10),height:parseInt(window.getComputedStyle(u,null).getPropertyValue("padding-top"),10)};i.forEach(function(e,t){var n=0;o[t].coords=e.split(",").map(function(e){var t=1==(n=1-n)?"width":"height";return a[t]+Math.floor(Number(e)*r[t])}).join(",")})}function t(e){return e.coords.replace(/ *, */g,",").replace(/ +/g,",")}function n(){clearTimeout(d),d=setTimeout(e,250)}function r(e){return document.querySelector('img[usemap="'+e+'"]')}var a=this,o=null,i=null,u=null,d=null;"function"!=typeof a._resize?(o=a.getElementsByTagName("area"),i=Array.prototype.map.call(o,t),u=r("#"+a.name)||r(a.name),a._resize=e,u.addEventListener("load",e,!1),window.addEventListener("focus",e,!1),window.addEventListener("resize",n,!1),window.addEventListener("readystatechange",e,!1),document.addEventListener("fullscreenchange",e,!1),u.width===u.naturalWidth&&u.height===u.naturalHeight||e()):a._resize()}function e(){function t(e){e&&(!function(e){if(!e.tagName)throw new TypeError("Object is not a valid DOM element");if("MAP"!==e.tagName.toUpperCase())throw new TypeError("Expected <MAP> tag, found <"+e.tagName+">.")}(e),r.call(e),n.push(e))}var n;return function(e){switch(n=[],typeof e){case"undefined":case"string":Array.prototype.forEach.call(document.querySelectorAll(e||"map"),t);break;case"object":t(e);break;default:throw new TypeError("Unexpected data type ("+typeof e+").")}return n}}"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&"object"==typeof module.exports?module.exports=e():window.imageMapResize=e(),"jQuery"in window&&(window.jQuery.fn.imageMapResize=function(){return this.filter("map").each(r).end()})}();
+        //# sourceMappingURL=imageMapResizer.map
+        imageMapResize();
+</script>
+</div>
+<div id="quiz" style="width:90%;display:flex;flex-direction:column;gap:8px;min-height:635px;">
+    <p>Iar acum să testam cunoștințele acumulate:
+    </p>
+    <iframe src="https://quizizz.com/embed/quiz/679a845f8617faa0f4ef8b29" title=" - Quizizz" style="flex:1;border-radius:20px;" frameBorder="0" allowfullscreen></iframe></div>
+</div>
+

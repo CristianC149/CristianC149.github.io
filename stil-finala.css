@@ -1,0 +1,60 @@
+.informatii p{
+    font-size:1.2rem;
+    font-weight: 700;
+    color: rgb(60, 26, 12);
+    text-indent:3rem;
+}
+h3{ 
+    font-size:2.5rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    color:rgb(84, 37, 16);
+}
+.corp{
+    padding: 2rem;
+}
+.galerie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.poza{
+    border:0.5rem solid rgb(74, 50, 15);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.45rem;
+    text-align: center;
+    width:22vw ;
+    height: 32vh;
+    margin: 3rem;
+    background-color: rgb(74, 50, 15);
+    transition: ease-in-out 0.2s;
+}
+.galerie img{
+    margin-bottom: 0.3rem;
+    width:22vw ;
+    height: 30vh;
+    border-radius: 13px 13px 0 0;
+}
+.galerie .poza:hover{
+transform:scale(1.5,1.5);
+transition: ease-in-out 0.2s;
+}
+.informatii img{
+height: 30vh;
+border-radius: 20px;
+border: 3px solid black;
+box-shadow: 3px 3px 10px black;
+}
+.informatii div{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    gap:2rem;
+
+}

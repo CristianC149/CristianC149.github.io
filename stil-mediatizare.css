@@ -177,10 +177,10 @@ nav ul li ul li {
 }
 
 .text-container p {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 600;
     margin: 0;
-    max-height: 48vh;
+    max-height: 52vh;
     text-shadow: 0 0 20px rgb(255, 255, 255),0 0 20px rgb(255, 255, 255),0 0 20px rgb(255, 255, 255);
 
 }
@@ -247,3 +247,78 @@ nav ul li ul li {
 #dreapta{
     transform:translateX(6vw);
 }
+.galerie img{
+    margin-bottom: 0.3rem;
+    border-radius: 13px 13px 0 0;
+    height:25vh;
+}
+.galerie .poza:hover{
+transform:scale(1.2,1.2);
+transition: ease-in-out 0.2s;
+}
+.galerie{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.poza{
+    color:white;
+    height:28vh;
+    border:0.5rem solid rgb(74, 50, 15);
+    border-radius: 20px;
+    display: flex;
+    margin:13px;
+    flex-direction: column;
+    font-size: 0.7rem;
+    text-align: center;
+    background-color: rgb(74, 50, 15);
+    transition: ease-in-out 0.2s;
+}
+.mare{
+    height: 100vh;
+    width:40vw;
+    border-radius:1000vh;
+}
+@media (max-width: 768px) {
+   .pag{
+    margin-top:1rem;
+   }
+   .mare{
+    width:100vw;
+    height: fit-content;
+   }
+   .text p{
+    width: 90vw;
+   }
+}
+
+.pag{
+    gap:2vw;
+    width: 100vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 93vw;
+    align-items: center;
+    flex-direction: row;
+    margin-top:4rem;
+    margin: 3rem;
+}
+.pag ul{
+    font-size:medium;
+    color:black
+}
+.text{
+    text-indent:3rem;
+    color: rgb(79, 50, 17);
+    width:47vw;
+    margin: 1rem;
+}
+.text h1{
+    text-align: center;
+}
+

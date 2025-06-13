@@ -1,0 +1,74 @@
+form{
+    display:flex;
+    flex-direction:column;
+    color:rgb(0, 0, 0);
+    width: 30rem;
+    border-radius: 20px;
+    background-image:url(Resurse/paper-rustic-background.jpg);
+    background-color: rgba(255, 255, 255, 0.279);
+    background-blend-mode: color;
+    background-size: cover;
+    border: 0.5rem solid rgba(0, 0, 0, 0.586);
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.596);
+    padding: 0.5rem 2rem 2rem 2rem;
+    
+}
+label, form div{
+    margin-top: 1rem;
+}
+input,textarea{
+    border-radius: 4px;
+    border:1px solid gray;
+}
+.formular{
+    padding-top: 5rem;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkuri li, a, h3{
+    color:rgb(57, 23, 7);
+    text-decoration: none;       
+}
+.linkuri{
+    margin:4rem 0 3rem 0;
+    width:95vw;
+    display: flex;
+}
+ol h3, ul h3{
+font-size:large;
+}
+.linkuri ol{
+font-size: small;
+}
+.contact{
+    position: relative;
+    float: bottom;
+    height: fit-content;
+    background-color: rgb(51, 27, 7);
+    min-height: 13rem;
+    width: 100%;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+}
+.contact h6{
+    font-size: large;
+    padding: 0;
+    margin: 0;
+
+}
+.contact p{
+    font-size:medium;
+}
+.contact div{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.345);
+    box-shadow: 0 0 10px rgb(188, 188, 188);
+    border-radius: 5px;
+}
